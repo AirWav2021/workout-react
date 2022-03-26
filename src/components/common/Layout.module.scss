@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 950px;
-  width: 500px;
+  height: 890px;
+  max-width: 560px;
+  width: 100%;
   padding: 30px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
