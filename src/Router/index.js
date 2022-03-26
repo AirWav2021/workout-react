@@ -11,9 +11,6 @@ export const Router = () => {
 					<NavLink to='/' className='link'>
 						Home
 					</NavLink>
-					<NavLink to='/new-workout' className='link'>
-						<NewWorkout />
-					</NavLink>
 				</div>
 				<Routes>
 					<Route path='/' element={<Home />} />
