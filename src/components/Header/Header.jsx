@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Header.module.scss'
 
 import userImage from '../../images/header/user.svg'
-import hamburgerImage from '../../images/header/hamburger.svg'
+import { Hamburger } from './Hamburger/Hamburger'
 
 export const Header = () => {
 	return (
@@ -10,10 +10,7 @@ export const Header = () => {
 			<button type='button'>
 				<img src={userImage} alt='Auth' />
 			</button>
-
-			<button>
-				<img src={hamburgerImage} alt='Auth' />
-			</button>
+			<Hamburger />
 		</header>
 	)
 }
