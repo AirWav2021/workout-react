@@ -20,7 +20,7 @@ export const Hamburger = () => {
 				type='button'
 				onClick={() => setShow(!show)}
 			>
-				<img src={show ? hamburgerCloseImage : hamburgerImage} alt='Auth' />
+				<img src={show ? hamburgerCloseImage : hamburgerImage} alt='Menu' />
 			</button>
 			<nav className={`${styles.menu} ${show ? styles.show : ''}`}>
 				<ul>

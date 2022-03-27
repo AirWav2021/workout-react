@@ -3,12 +3,17 @@ import { Button } from '../../ui/Button/Button'
 import { Counters } from '../../ui/Counters/Counters'
 import styles from './Home.module.scss'
 import bgImage from '../../../images/home-bg.jpg'
+import { useNavigate } from 'react-router-dom'
 
 export const Home = () => {
+	const navigate = useNavigate()
+	const createNewWorkout = () => {
+		navigate('/new-workout')
+	}
 	return (
-		<Layout height='100%' bgImage={bgImage}>
+		<Layout bgImage={bgImage}>
 			<div className={styles['home-wrapper']}>
-				<Button text='New' type='main' callback={() => {}} />
+				<Button text='New' type='main' callback={createNewWorkout} />
 				<h1 className={styles.heading}>MAIN TITLE</h1>
 				<Counters />
 			</div>
