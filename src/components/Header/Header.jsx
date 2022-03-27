@@ -6,7 +6,7 @@ import { Hamburger } from './Hamburger/Hamburger'
 import arrowImage from '../../images/header/arrow.svg'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-export const Header = ({ backCallback }) => {
+export const Header = () => {
 	const location = useLocation()
 	const navigate = useNavigate()
 
@@ -17,7 +17,7 @@ export const Header = ({ backCallback }) => {
 					<img src={arrowImage} alt='Auth' />
 				</button>
 			) : (
-				<button type='button'>
+				<button onClick={() => navigate('/auth')} type='button'>
 					<img src={userImage} alt='Auth' />
 				</button>
 			)}

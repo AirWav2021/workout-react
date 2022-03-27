@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom'
 import bgImage from '../../../images/new-workout-bg.jpg'
 import { Field } from '../../ui/Field/Field'
 import { Button } from '../../ui/Button/Button'
-import styles from './NewWorkout.module.scss'
 
 export const NewWorkout = () => {
 	const [name, setName] = useState('')
@@ -19,7 +18,7 @@ export const NewWorkout = () => {
 	return (
 		<>
 			<Layout bgImage={bgImage} heading='Create new workout' />
-			<div className={styles.wrapper}>
+			<div className='wrapper-inner-page'>
 				<form onSubmit={handleSubmit}>
 					<Field
 						placeholder='Enter name'
